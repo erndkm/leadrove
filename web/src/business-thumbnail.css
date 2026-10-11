@@ -1,0 +1,7 @@
+.business-thumbnail-slot { flex: 0 0 44px; display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; overflow: hidden; border-radius: 7px; background: var(--quiet-surface, var(--canvas)); color: var(--muted); }
+.business-thumbnail-slot.has-image { background: #fff; }
+.business-thumbnail-slot .business-thumbnail { display: block; flex: none; width: 44px; height: 44px; max-width: none; }
+.business-thumbnail.is-photo { object-fit: cover; }
+.business-thumbnail.is-logo { object-fit: contain; padding: 5px; }
+.business-row .business-summary { flex: 1; min-width: 0; }
+@media (max-width: 680px) { .business-row .business-select { gap: 8px; } .business-thumbnail-slot { flex-basis: 38px; width: 38px; height: 38px; } .business-thumbnail-slot .business-thumbnail { width: 38px; height: 38px; } }

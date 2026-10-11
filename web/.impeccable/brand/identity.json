@@ -1,0 +1,44 @@
+{
+  "name": "Leadrove",
+  "pronunciation": "LEED-rohv",
+  "meaning": "Lead + rove: explore a neighborhood and find potential clients.",
+  "tagline": "Find your next local client.",
+  "scope": "Name, logo and existing app branding; the workspace layout is maintained separately.",
+  "domain": "leadrove.com",
+  "domainEvidence": "domain-check.json",
+  "mark": "A custom L/R ligature joining the two parts of Leadrove's name: a curved L alongside an open R with a forward diagonal. Consistent stroke weight and a clear central channel keep the compact monogram readable at favicon sizes.",
+  "version": 3,
+  "colors": {
+    "ink": "#204C46",
+    "inverseInk": "#F3F7F4",
+    "inverseMark": "#F3F7F4"
+  },
+  "wordmark": {
+    "typeface": "Manrope",
+    "weight": 750,
+    "case": "capitalized",
+    "spacing": "Custom optical spacing at a 44-unit type scale, with 0.7 units removed from glyph advances.",
+    "format": "Outlined SVG paths; no font loading required",
+    "license": "public/brand/Manrope-OFL.txt"
+  },
+  "implementation": {
+    "styles": "src/brand.css",
+    "logo": "public/brand/leadrove-logo.svg",
+    "darkLogo": "public/brand/leadrove-logo-dark.svg",
+    "monoLogo": "public/brand/leadrove-logo-mono.svg",
+    "mark": "public/brand/leadrove-mark.svg",
+    "favicon": "public/brand/leadrove-favicon.svg",
+    "appIcon": "public/brand/leadrove-apple-touch-icon.png",
+    "preview": "public/brand/leadrove-preview.png",
+    "faviconIco": "public/favicon.ico",
+    "faviconPng": "public/brand/leadrove-favicon-32.png"
+  },
+  "compatibility": "Retain cf:* browser storage, .clientfinder/ report paths, CLIENTFINDER_* environment variables and the configured hosted origin.",
+  "provenance": {
+    "mark": "Custom authored SVG contours, developed from four original L/R studies. No stock symbol, traced brand asset or generated raster.",
+    "wordmark": "Manrope variable font from google/fonts, instantiated at weight 750, spaced and converted to outlines using fontTools.",
+    "appIcon": "Chromium render of the inverse L/R monogram on a full #204C46 square at 180 x 180; the platform supplies corner masking.",
+    "preview": "Chromium render of the SVG brand assets and HTML at 1440 x 900; no generative imagery.",
+    "faviconFallbacks": "Chromium renders of public/brand/leadrove-favicon.svg at 16, 32 and 48 pixels; the ICO contains all three PNG frames."
+  }
+}

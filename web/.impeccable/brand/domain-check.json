@@ -1,0 +1,15 @@
+{
+  "domain": "leadrove.com",
+  "checkedAt": "2026-10-09T18:41:40.689Z",
+  "rdap": {
+    "url": "https://rdap.verisign.com/com/v1/domain/leadrove.com",
+    "status": 404,
+    "interpretation": "No registration record returned by the .com registry"
+  },
+  "whois": {
+    "server": "whois.verisign-grs.com",
+    "observedAt": "2026-10-09T18:36:32Z",
+    "result": "No match for \"LEADROVE.COM\"."
+  },
+  "status": "Appeared unregistered when checked; not purchased or reserved. Final availability and price require registrar checkout."
+}

@@ -1,0 +1,80 @@
+{
+  "expo": {
+    "name": "Leadrove",
+    "slug": "leadrove-mobile",
+    "version": "1.0.0",
+    "scheme": "leadrove",
+    "orientation": "default",
+    "userInterfaceStyle": "automatic",
+    "icon": "./assets/icon.png",
+    "ios": {
+      "bundleIdentifier": "app.leadrove.mobile",
+      "supportsTablet": true,
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "location"
+        ]
+      }
+    },
+    "android": {
+      "package": "app.leadrove.mobile",
+      "allowBackup": false,
+      "blockedPermissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#204c46"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/icon.png"
+    },
+    "plugins": [
+      "./plugins/with-private-storage.cjs",
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Leadrove uses your location to find nearby businesses when you search or enable nearby discovery.",
+          "locationAlwaysAndWhenInUsePermission": "With discovery enabled, Leadrove checks for business leads near you throughout the day, including while the app is in the background. You can pause discovery at any time.",
+          "isIosBackgroundLocationEnabled": true,
+          "isAndroidBackgroundLocationEnabled": true,
+          "isAndroidForegroundServiceEnabled": true,
+          "androidForegroundServiceIcon": "./assets/notification.png"
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification.png",
+          "color": "#204c46",
+          "defaultChannel": "nearby-leads"
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash.png",
+          "imageWidth": 100,
+          "backgroundColor": "#f7f8f7",
+          "dark": {
+            "image": "./assets/adaptive-icon.png",
+            "backgroundColor": "#1a1a1a"
+          }
+        }
+      ],
+      "expo-sqlite",
+      "expo-image",
+      "expo-font",
+      "expo-localization"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

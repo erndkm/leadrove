@@ -1,0 +1,14 @@
+.location-autocomplete .location-suggestions { width: max(100%, 380px); max-width: min(520px, calc(100vw - 56px)); padding: 6px; }
+.location-suggestion-status { margin: 0; padding: 10px; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.location-suggestions [role='listbox'] { max-height: min(380px, 48dvh); overflow-y: auto; overscroll-behavior: contain; scrollbar-color: var(--muted) transparent; scrollbar-width: thin; }
+.location-suggestions button[role='option'] { min-height: 58px; padding: 10px; color: var(--muted); }
+.location-suggestions button[aria-selected='true'] { background: var(--accent-soft); color: var(--ink); }
+.location-suggestion-copy { display: flex; flex-direction: column; min-width: 0; overflow-wrap: anywhere; }
+.location-suggestion-copy strong { color: var(--ink); font-size: 13px; font-weight: 650; }
+.location-suggestion-copy > span { color: var(--muted); font-size: 12px; }
+.location-suggestions .location-retry { min-height: 44px; color: var(--accent); }
+@media (max-width: 680px) {
+  .location-autocomplete .location-suggestions { width: 100%; max-width: 100%; }
+  .location-suggestion-copy strong { font-size: 15px; }
+  .location-suggestion-copy > span { font-size: 13px; }
+}

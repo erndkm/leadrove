@@ -1,0 +1,16 @@
+/* Keep the outlined identity independent of the workspace's compact icon rules. */
+.brand { flex: none; min-height: 44px; }
+.brand .brand-logo { width: 168px; height: 40px; }
+.brand .brand-logo-light { display: block; }
+.brand .brand-logo-dark { display: none; }
+[data-theme='dark'] .brand .brand-logo { filter: none; }
+[data-theme='dark'] .brand .brand-logo-light { display: none; }
+[data-theme='dark'] .brand .brand-logo-dark { display: block; }
+
+@media (max-width: 680px) {
+  .brand .brand-logo { width: 126px; height: 30px; }
+}
+
+@media (max-width: 360px) {
+  .brand .brand-logo { width: 110px; height: 27px; }
+}

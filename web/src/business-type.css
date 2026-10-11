@@ -1,0 +1,16 @@
+.business-type { display: inline-flex; align-items: center; gap: 5px; max-width: 100%; padding: 3px 7px; border-radius: 5px; background: var(--type-bg); color: var(--type-ink); font-size: 11px; font-weight: 650; line-height: 1.5; text-align: left; }
+.business-type > span { overflow-wrap: anywhere; }
+.type-beauty { --type-bg: #f2eaf0; --type-ink: #794367; }
+.type-trades { --type-bg: #f3ede3; --type-ink: #79521d; }
+.type-food { --type-bg: #f7ebe5; --type-ink: #964b32; }
+.type-health { --type-bg: #e6f1ec; --type-ink: #2d6a50; }
+.type-retail { --type-bg: #eaf0f6; --type-ink: #45647f; }
+.type-professional { --type-bg: #edecf5; --type-ink: #605486; }
+.type-hospitality { --type-bg: #e5f1f1; --type-ink: #326b70; }
+[data-theme='dark'] .type-beauty { --type-bg: #392c35; --type-ink: #e6b5d5; }
+[data-theme='dark'] .type-trades { --type-bg: #393125; --type-ink: #e7c58f; }
+[data-theme='dark'] .type-food { --type-bg: #3c2e28; --type-ink: #e9b39b; }
+[data-theme='dark'] .type-health { --type-bg: #27382f; --type-ink: #a5d9bb; }
+[data-theme='dark'] .type-retail { --type-bg: #2a333d; --type-ink: #b3cce5; }
+[data-theme='dark'] .type-professional { --type-bg: #322e40; --type-ink: #c8bcea; }
+[data-theme='dark'] .type-hospitality { --type-bg: #253738; --type-ink: #a3d4d8; }

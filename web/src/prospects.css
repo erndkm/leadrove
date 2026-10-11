@@ -1,0 +1,38 @@
+.prospect-form > label, .prospect-field-pair label { display: grid; gap: 7px; color: var(--muted); font-size: 12px; }
+.prospect-form input:not([type=checkbox]), .prospect-form select, .prospect-form textarea { width: 100%; min-width: 0; min-height: 40px; padding: 9px 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--ink); font-size: 13px; }
+.prospect-error { color: var(--warning); font-size: 12px; line-height: 1.6; }
+.prospect-proposal { margin-bottom: 22px; }
+.prospect-price-line { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+.prospect-price-line strong { font-size: 23px; font-weight: 650; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+.prospect-price-line p, .prospect-price-range { color: var(--muted); font-size: 11px; margin-top: 5px; line-height: 1.6; }
+.prospect-reason { font-size: 13px; line-height: 1.7; margin-top: 16px; overflow-wrap: anywhere; }
+.prospect-offer { font-size: 12px; line-height: 1.7; color: var(--muted); margin-top: 8px; }
+.prospect-form { display: grid; gap: 14px; padding: 12px 0 18px; font-size: 12px; line-height: 1.7; }
+.prospect-form textarea { resize: vertical; line-height: 1.65; }
+.prospect-field-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.prospect-form > .prospect-check { display: flex; flex-direction: row; align-items: flex-start; gap: 8px; color: var(--ink); }
+.prospect-check input { margin-top: 4px; }
+.prospect-verification { margin-bottom: 20px; }
+.prospect-verification > .secondary { margin: 14px 0 8px; }
+.research-evidence { display: grid; gap: 8px; font-size: 12px; line-height: 1.7; margin: 12px 0; }
+.research-evidence a, .price-references a { display: inline; text-decoration: underline; overflow-wrap: anywhere; }
+.research-evidence a svg, .price-references a svg { display: inline; margin-left: 4px; }
+.price-references ul { padding-left: 18px; }
+.price-references li { margin: 9px 0; }
+.prospect-brief { margin: 0 0 22px; }
+.prospect-inline-actions { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.prospect-history { padding-left: 0; list-style: none; }
+.prospect-history li { display: grid; gap: 3px; margin: 12px 0; }
+.prospect-history time { color: var(--muted); font-size: 11px; }
+.business-quote { display: flex; gap: 7px; flex-wrap: wrap; margin-top: 6px; color: var(--ink); font-size: 11px; font-variant-numeric: tabular-nums; }
+.business-quote span { color: var(--muted); }
+.business-quote strong { font-weight: 600; }
+@media (max-width: 680px) {
+  .prospect-field-pair { grid-template-columns: 1fr; }
+  .main-nav { gap: 12px; }
+  .main-nav button { font-size: 12px; }
+  .topbar { gap: 14px; }
+  .topbar .brand img { width: 105px; }
+  .topbar .header-right { gap: 4px; }
+}
+@media (max-width: 370px) { .app-shell .topbar { gap: 8px; padding-inline: 12px; } .topbar .brand img { width: 80px; } .app-shell .main-nav { gap: 8px; } .app-shell .main-nav button { font-size: 11px; } }
